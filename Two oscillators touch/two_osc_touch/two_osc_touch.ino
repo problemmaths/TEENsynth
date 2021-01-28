@@ -20,11 +20,13 @@ AudioConnection          patchCord3(mixer1, dac1);
 
 //set up variables
 int touchRead_pin = A9; //variable to store the input pin
-int touchRead_pin2 = A8; //variable to store the second input pin
 int thresh = 2300; // variable to store the touch threshold
-int thresh2 = 2300; // variable to store the second touch threshold
 int play_flag = 0; // variable that flags if sound is being played or not 1 = playing; 0 = not playing
 int current; // variable used to store the value from the touch input pin
+
+//variables for the second piece of fruit
+int touchRead_pin2 = A8; //variable to store the second input pin
+int thresh2 = 2300; // variable to store the second touch threshold
 int play_flag2 = 0; // variable that flags if sound from the second apple is being played or not 1 = playing; 0 = not playing
 int current2; // variable used to store the value from the second touch input pin
 
